@@ -3793,11 +3793,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Seminar_.Net\\Test\\DemoMVC\\DemoMVC\\DemoMVC.csproj",
+      "projectUniqueName": "D:\\Git Test\\ThucHanhWithBranch\\VanTran\\DemoMVC\\DemoMVC\\DemoMVC.csproj",
       "projectName": "DemoMVC",
-      "projectPath": "D:\\Seminar_.Net\\Test\\DemoMVC\\DemoMVC\\DemoMVC.csproj",
+      "projectPath": "D:\\Git Test\\ThucHanhWithBranch\\VanTran\\DemoMVC\\DemoMVC\\DemoMVC.csproj",
       "packagesPath": "C:\\Users\\Van Tran\\.nuget\\packages\\",
-      "outputPath": "D:\\Seminar_.Net\\Test\\DemoMVC\\DemoMVC\\obj\\",
+      "outputPath": "D:\\Git Test\\ThucHanhWithBranch\\VanTran\\DemoMVC\\DemoMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
