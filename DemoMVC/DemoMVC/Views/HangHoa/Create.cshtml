@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Project_Seminar.Models.HangHoaVM>
+@{
+    ViewData["Title"] = "Danh Sách Hàng Hóa";
+}
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <!-- Chèn hình ảnh ở đây -->
+                    <img src="~/images/placeholder.jpg" class="card-img-top" alt="Hình ảnh sản phẩm" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.TenHangHoa</h5>
+                        <p class="card-text">Giá: @item.DonGia.ToString("N0") VND</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    body {
+        overflow-y: auto; /* Cho phép cuộn trang */
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+        width: 100%;
+    }
+</style>
+

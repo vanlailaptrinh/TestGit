@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Project_Seminar.Models.HangHoaVM.HangHoa>
+
+@{
+        ViewData["Title"] = "Danh sách Hàng Hóa";
+}
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<h2>Danh sách Hàng Hóa</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã Hàng Hóa</th>
+            <th>Tên Hàng Hóa</th>
+            <th>Đơn Giá</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var hanghoa in Model)
+        {
+            <tr>
+                <td>@hanghoa.MaHangHoa</td>
+                <td>@hanghoa.TenHangHoa</td>
+                <td>@hanghoa.DonGia</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-controller="HangHoa" asp-action="Create" class="btn btn-primary">Thêm Hàng Hóa</a>
+<a asp-controller="HangHoa" asp-action="Edit" class="btn btn-primary">Sua Hang Hoa</a>

@@ -1,0 +1,26 @@
+﻿@model Project_Seminar.Models.HangHoaVM.HangHoa
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Sửa hàng hóa</h2>
+<form asp-controller="HangHoa" asp-action="Edit" method="post">
+    <input type="hidden" name="_method" value="put" />
+
+    <div class="form-group">
+        <label for="MaHangHoa">Ma Hang Hoa</label>
+        <input type="text" asp-for="MaHangHoa" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="TenHangHoa">Ten Hang Hoa</label>
+        <input type="text" asp-for="TenHangHoa" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="DonGia">Don Gia</label>
+         <input type="number" asp-for="DonGia" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-success">Edit</button>
+
+</form>
+
+
